@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/style.css">
+		<title>Image filter</title>
+	</head>
+	<body>
+		<select id="imageSelector">
+			<option value="images/img01.jpg">img01.jpg</option>
+			<option value="images/img02.jpg">img02.jpg</option>
+			<option value="images/img03.jpg">img03.jpg</option>
+			<option value="images/img04.jpg">img04.jpg</option>
+			<option value="images/img05.jpg">img05.jpg</option>
+		</select>
+		<select id="filterSelector">
+			<option value="grayscale" selected="selected">Grayscale</option>
+			<option value="sepia">Sepia</option>
+			<option value="negative">Negative</option>
+			<option value="mosaic">Mosaic</option>
+			<option value="mosaicGray">Mosaic(Grayscale)</option>
+		</select>
+		<input type="button" id="filterButton" value="Filter"/>
+		<br>
+		<canvas id="stage"></canvas>
+		<div id="execTime"></div>
+		<script src="imagefilter.js"></script>
+	</body>
+</html>
